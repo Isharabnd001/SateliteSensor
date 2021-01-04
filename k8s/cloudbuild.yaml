@@ -48,7 +48,7 @@ steps:
   # deploy changes to kubernetes config files
   - name: "gcr.io/cloud-builders/kubectl"
     id: "Deploy"
-    args: ["apply", "-f", "k8s/"]
+    args: ["apply", "-f", "k8s/","--validate=false"]
     env: 
      - "CLOUDSDK_COMPUTE_REGION=us-central1-c"
      - "CLOUDSDK_CONTAINER_CLUSTER=satelite-sensor-cluster-1"
