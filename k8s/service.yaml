@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gke-tutorial-deployment-4
+  name: satelite-sensor-deployment-4
 spec:
   selector:
-    app: gke-tutorial-deployment-4
+    app: satelite-sensor-deployment-4
   type: NodePort
   ports:
     - protocol: TCP
