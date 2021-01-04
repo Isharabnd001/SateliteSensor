@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: satelite-sensor-deployment-5
-  type: NodePort
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 3000
