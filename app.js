@@ -3,7 +3,7 @@ var app = express();
 var date = new Date;
 // Routes
 app.get('/', function(req, res) {
-  res.send({"health":"FAILED",
+  res.send({"health":"FAILED..",
 "location":new Date().getMinutes()*(new Date().getHours()+1)
 });
 });
