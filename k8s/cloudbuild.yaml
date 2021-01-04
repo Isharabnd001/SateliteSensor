@@ -1,3 +1,4 @@
+apiVersion: v1
 steps:
   # # decrypt .env
   # - name: gcr.io/cloud-builders/gcloud
