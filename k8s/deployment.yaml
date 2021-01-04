@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: satelite-sensor-deployment-4
+  namespace: default
+  labels:
+    app: satelite-sensor-deployment-4
+spec:
+  replicas: 1 # number of pods
+  selector:
+    matchLabels:
+      app: satelite-sensor-deployment-4
+  template:
+    metadata:
+      labels:
+        app: satelite-sensor-deployment-4
+    spec:
+      containers:
+        - name: satelite-sensor-image-4
+          image: gcr.io/satelitesensor/satelite-sensor-image-4
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+              protocol: TCP
