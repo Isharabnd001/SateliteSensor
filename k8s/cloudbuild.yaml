@@ -49,10 +49,9 @@ steps:
   - name: "gcr.io/cloud-builders/kubectl"
     id: "Deploy"
     args: ["apply", "-f", "k8s/"]
-    env: [
-      "CLOUDSDK_COMPUTE_REGION=us-central1-c",
-      "CLOUDSDK_CONTAINER_CLUSTER=satelite-sensor-cluster-1",
-    ]
+    env: 
+     - "CLOUDSDK_COMPUTE_REGION=us-central1-c"
+     - "CLOUDSDK_CONTAINER_CLUSTER=satelite-sensor-cluster-1"
   # add latest tag to new image
   - name: "gcr.io/cloud-builders/gcloud"
     id: "Tag"
