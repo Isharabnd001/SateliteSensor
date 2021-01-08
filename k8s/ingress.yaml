@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: satelite-sensor-ingress-5
+  name: satelite-sensor-ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "satelite-sensor-ip"
 spec:
   backend:
-    serviceName: satelite-sensor-deployment-5
+    serviceName: satelite-sensor-deployment
     servicePort: 3000

@@ -1,14 +1,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: satelite-sensor-hpa-5
+  name: satelite-sensor-hpa
   namespace: default
   labels:
-    app: satelite-sensor-deployment-5
+    app: satelite-sensor-deployment
 spec:
   scaleTargetRef:
     kind: Deployment
-    name: satelite-sensor-deployment-5
+    name: satelite-sensor-deployment
     apiVersion: apps/v1
   minReplicas: 1
   maxReplicas: 5

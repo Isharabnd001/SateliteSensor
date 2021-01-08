@@ -1,22 +1,22 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
-  name: satelite-sensor-deployment-5
+  name: satelite-sensor-deployment
   namespace: default
   labels:
-    app: satelite-sensor-deployment-5
+    app: satelite-sensor-deployment
 spec:
   replicas: 1 # number of pods
   selector:
     matchLabels:
-      app: satelite-sensor-deployment-5
+      app: satelite-sensor-deployment
   template:
     metadata:
       labels:
-        app: satelite-sensor-deployment-5
+        app: satelite-sensor-deployment
     spec:
       containers:
-        - name: satelite-sensor-image-5
+        - name: satelite-sensor-image
           image: IMAGE
           imagePullPolicy: Always
           ports:

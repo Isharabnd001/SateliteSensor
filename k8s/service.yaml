@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: satelite-sensor-deployment-5
+  name: satelite-sensor-deployment
 spec:
+  clusterIP: None
   selector:
-    app: satelite-sensor-deployment-5
-  type: LoadBalancer
+    app: satelite-sensor-deployment
   ports:
     - protocol: TCP
       port: 3000
