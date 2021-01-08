@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: satelite-sensor-deployment
 spec:
+  type: ClusterIP
   selector:
     app: satelite-sensor-deployment
   ports:
