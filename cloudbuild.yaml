@@ -1,5 +1,5 @@
 steps:
-  # pull previous image to speed up docker build
+  # pull previous image to speed up docker build ,
   - name: "gcr.io/cloud-builders/docker"
     id: "Pull"
     entrypoint: "bash"
