@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: satelite-sensor-deployment
 spec:
-  clusterIP: None
   selector:
     app: satelite-sensor-deployment
   ports:
