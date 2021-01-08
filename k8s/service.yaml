@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: satelite-sensor-deployment
 spec:
-clusterIP: None
   selector:
     app: satelite-sensor-deployment
+  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 3000
