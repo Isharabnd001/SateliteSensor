@@ -1,9 +1,9 @@
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: satelite-sensor-deployment
+  name: satelite-sensor-service
 spec:
-clusterIP: 100.0.0.3
   selector:
     app: satelite-sensor-deployment
   ports:
