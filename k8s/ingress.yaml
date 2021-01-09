@@ -8,7 +8,6 @@
 #   backend:
 #     serviceName: satelite-sensor-deployment
 #     servicePort: 3000
-
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
